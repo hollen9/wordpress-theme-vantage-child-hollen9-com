@@ -1,0 +1,31 @@
+$hollen9-primary-color: #98CE92;
+$hollen9-secondary-color: #414171;
+$hollen9-tertiary-color: #CED8C9;
+$hollen9-quaternary-color: #7EB877;
+$hollen9-quinary-color: #D6E4D3;
+
+
+$hollen9-lightgrey: lighten(saturate($hollen9-secondary-color, -10%), 70%);
+$hollen9-primary-hover-color: lighten($hollen9-primary-color, 5%);
+$hollen9-secondary-hover-color: lighten($hollen9-secondary-color, 5%);
+
+$main-background: #EAF5E4;
+
+// $hyperlink-color: #8fd6b3;
+$hyperlink-color: darken($hollen9-primary-color, 20%);
+$hyperlink-h1-color: darken($hollen9-primary-color, 10%);
+$text-color: #333;
+
+$normal-text-size: 14px;
+
+$nav-link-color: #eee;
+
+$field-color: #F5F2F0;
+
+@mixin button-transition {
+     transition: all 0.2s ease !important;
+}
+
+@mixin font-awesome-common {
+     font-family: "FontAwesome" !important;
+}

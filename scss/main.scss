@@ -1,0 +1,406 @@
+/*
+ * WP-SCSS 會將所有 /scss/ 資料夾底下任意編輯過的 .scss，編譯為 .css 並儲存到 /css/
+ * */
+
+// Essential imports
+@import "variables";
+
+// Plugin supports
+//@import "plugin-ecommerce-product-category"; // for plugin: eCommerce Product Category, by ImpliCode
+//@import "plugin-wp-darkmode"; // for plugin: WP Dark Mode
+@import "plugin-metaslider-vantage"; // for plugin: metaslider that works with vantage
+@import "plugin-disable-vantage-code-theme";
+@import "plugin-wp-github-md";
+
+//
+// Vars
+$navitem-active-bottom-border-width: .5rem;
+$main-padding: 3rem;
+$footer-social-icons-square-size: 4rem;
+
+// Layouts
+
+
+
+#primary, #footer-primary {
+    float: left;
+    width: 71.287%;
+}
+
+#secondary, #footer-secondary {
+    float: right;
+    width: 23.762%;
+}
+
+#footer-secondary > span {
+	line-height: $footer-social-icons-square-size;
+}
+
+#footer-widgets .widget {
+	padding: 0 0;
+}
+
+/* 寬度小於 640px (手機、平板) */
+@media only screen and (max-width: 680px) {
+	body.responsive #primary, body.responsive #secondary,
+	body.responsive #footer-primary, body.responsive #footer-secondary
+	 {
+		width: auto;
+		float: none;
+	}
+}
+
+//
+
+.d-block {
+	display: block;
+}
+
+body, button, input, select, textarea {
+	font-size: $normal-text-size;
+}
+
+a, .entry-content a {
+	color: $hyperlink-color;
+	&:hover, &:focus, &:active {
+		color: $hollen9-primary-hover-color;
+	}
+}
+
+article.post .entry-header h1.entry-title a, article.page .entry-header h1.entry-title a {
+	color: $hyperlink-h1-color;
+	&:hover, &:focus, &:active {
+		color: $hollen9-primary-hover-color;
+	}
+}
+
+.the_loop article a.d-block {
+	color: $text-color;
+	text-decoration: none;
+	min-height: 3rem;
+	// padding-bottom: 2rem;
+}
+
+#main {
+	background: $main-background;
+	padding: $main-padding;
+}
+
+
+// LOGO
+
+#masthead.masthead-logo-in-menu .logo > h1, #masthead.masthead-logo-in-menu .logo > .site-title {
+	padding: 0;
+	margin-left: 1rem;
+	color: $hollen9-primary-color;
+	&::after {
+		content: "9";
+		vertical-align: super;
+		font-size: 1rem;
+	}
+}
+#masthead .hgroup .site-title.logo-title {
+	text-align: left;
+	&::after {
+		content: "9";
+		vertical-align: super;
+		font-size: 60%;
+	}
+}
+
+// Exlude MobileNav
+.site-navigation.main-navigation.use-sticky-menu > div > div[class^="menu-mainmenu"] ul li:first-of-type {
+	display: none;
+}
+.site-navigation.main-navigation.use-sticky-menu.sticky > div > div[class^="menu-mainmenu"] ul li:first-of-type {
+	display: inline-block;
+	background-image: url("https://hollen9.com/wp-content/uploads/2022/07/HollenXD2022_50x50-1.png");
+	background-repeat: no-repeat;
+	background-size: 3rem;
+    background-position: 20% center;
+    // padding-left: 3rem;
+}
+
+.site-navigation.main-navigation.use-sticky-menu ul li:first-of-type {
+	// display: none;
+x
+	a:not(.mobilenav-main-link) {
+		color: $hollen9-primary-color;
+		padding-left: 4rem;
+	}
+}
+
+.site-navigation.main-navigation.use-sticky-menu.sticky ul li:first-of-type {
+	//display: inline-block;
+	a:not(.mobilenav-main-link) {
+		color: $hollen9-primary-color;
+		text-indent: 2rem;
+	}
+	
+}
+
+ul.mobile {
+	li.menu-item-type-custom:first-of-type {
+		display: none;
+	}
+	li.menu-item-home {
+		border-top: 0;
+	}
+}
+
+
+// BODY
+
+body.layout-full {
+	background-color: $hollen9-secondary-color !important;
+}
+
+.main-navigation {
+	/*background: #074C7A;*/
+	background: $hollen9-secondary-color;
+}
+
+.main-navigation a {
+	color: $nav-link-color;
+}
+
+.main-navigation ul li:hover > a, .main-navigation ul li.focus > a {
+    background: $hollen9-primary-color !important;
+    /*color: #fff;*/
+}
+
+.main-navigation ul li a {
+	padding: 2rem (4rem-$navitem-active-bottom-border-width);
+}
+
+.main-navigation ul li {
+	/*box-sizing: border-box;
+	border-style: solid;
+	border-color:#074C7A;
+	border-width: 1rem 0;*/
+}
+.main-navigation ul li.current_page_item:nth-of-type(n+2) {
+	box-sizing: border-box;
+	border-bottom: $navitem-active-bottom-border-width solid $hollen9-primary-color;
+}
+
+.main-navigation ul li.current_page_item:nth-of-type(n+2) a {
+	padding: 2rem 3.5rem 1.5rem 3.5rem;
+}
+
+.mobile-nav-frame .title {
+	background: #063D61 !important;
+	border-bottom: 0 !important;
+}
+
+.mobile-nav-frame {
+	background: $hollen9-secondary-color !important;	
+}
+.mobile-nav-frame ul {
+	background: $hollen9-secondary-color !important;
+	border: 0 !important;
+}
+
+.mobile-nav-frame ul li {
+	border-bottom: 0 !important;
+}
+
+
+// /*登入按鈕highlight*/
+// .main-navigation ul li > a[href$="wp-login.php"], .main-navigation ul li.focus > a[href$="wp-login.php"] {
+// 	background: #BA551A;
+// }
+
+#search-icon #search-icon-icon {
+	background-color: darken($hollen9-secondary-color, 10%);
+	&:hover, &:focus {
+		background: $hollen9-primary-color;
+	}
+}
+
+#colophon {
+    background: $hollen9-secondary-color;	
+	color: #B8C0CB;
+	padding: $main-padding;
+}
+
+#masthead {
+	//display: flex;
+	//flex-flow: column;
+	background: $hollen9-tertiary-color;
+	padding: 0 35px;
+	& aside {
+		width: unset !important;
+		padding: 0 !important;
+	}
+	& aside:not(aside.widget_media_image) {
+		margin-top: 30px !important;
+		float: right;
+	}
+}
+
+
+#masthead .widget_polylang {
+	//float: right !important;
+	& ul {
+		display: inline-block;
+	}
+	//margin-top: 30px !important;
+	/*text-align: right !important;*/
+}
+
+#masthead aside.widget_media_image {
+	display: flex;
+	flex-flow: column;
+	margin-bottom: -40px !important;
+	
+}
+
+#masthead aside.widget_media_image h3.widget-title {
+	order: 2;
+	color: #5E5E5E;
+	font-size: 1rem;
+	font-weight: thin;
+	text-indent: 63px;
+}
+
+#masthead aside.widget_media_image a {
+	order: 1;
+}
+
+@mixin normal-button-style {
+	background-color: $hollen9-secondary-color !important;
+	border:0 !important;
+	border-radius: .5rem;
+	color: #fff !important;
+	@include button-transition;
+	background-image: none;
+	&:hover {
+		background-image: none;
+		background-color: $hollen9-primary-color !important;
+	}
+}
+//聯絡我 送出按鈕
+div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+	@include normal-button-style;
+}
+
+a.button, button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	@include normal-button-style;
+}
+
+.post-navigation a, #image-navigation a {
+	@include normal-button-style;
+}
+
+article.post .entry-header h1.entry-title, article.page .entry-header h1.entry-title {
+	color: $hyperlink-h1-color;
+}
+
+article.post .entry-header, article.page .entry-header {
+	margin-bottom: 0;
+}
+
+.the_loop article.post .entry-header h1.entry-title {
+	margin: 0;
+}
+
+.the_loop article.post, article.page {
+	margin-bottom: 2rem;
+	padding-bottom: 0;
+}
+
+article.post, article.page {
+	border-bottom-color: $hollen9-lightgrey;
+}
+
+/* Pagination */
+
+.posts-pagination {
+	text-align: center;
+}
+
+.page-numbers {
+	@include button-transition;
+	color: $hollen9-secondary-color;
+	display: inline-block;
+	text-decoration: none;
+	width: $normal-text-size;
+	height: $normal-text-size;
+	padding: $normal-text-size;
+	background-color: $hollen9-tertiary-color;
+	border-radius: 100%;
+	text-align: center;
+	line-height: $normal-text-size;
+	//border: $navitem-active-bottom-border-width solid transparent;
+	&.current {
+		border-color: $hollen9-secondary-color;
+		background: $hollen9-secondary-color;
+		color: $nav-link-color;
+	}
+	&.next {
+		margin-left: 2rem;
+		font-size: 0;
+		&:after {
+			font-size: $normal-text-size;
+			content: '\f054';
+			@include font-awesome-common;
+		}
+	}
+	&.prev {
+		margin-right: 2rem;
+		font-size: 0;
+		&:after {
+			font-size: $normal-text-size;
+			content: '\f053';
+			@include font-awesome-common;
+		}
+	}
+	&:not(.current):hover, &:not(.current):focus, &:not(.current):active {
+		background-color: $hollen9-primary-color;
+		color: $nav-link-color;
+	}
+}
+
+
+#scroll-to-top {
+	background: $hollen9-primary-color;
+	bottom: 6rem;
+	right: 2rem;
+}
+
+input, textarea {
+	background-color: $field-color;
+	border-radius: .5rem;
+    border: .25rem solid $hollen9-tertiary-color;
+}
+
+select {
+	border-radius: .5rem;
+    padding: .5rem .5rem;
+    border: .25rem solid $hollen9-tertiary-color;
+	background-color: $field-color;
+}
+
+/* Footer */
+#theme-attribution {
+	display: none; /*將 SiteOrigin 的免費文字隱藏*/
+}
+
+
+#footer-widgets div.footer-socials {
+	text-align: center;
+	font-size: $footer-social-icons-square-size * 3 / 4;
+
+	a {
+		margin: 0 .05rem;
+		@include button-transition;
+		display: inline-block;
+		width: $footer-social-icons-square-size;
+		height: $footer-social-icons-square-size;
+		line-height: $footer-social-icons-square-size;
+		&:hover, &:active, &:focus {
+			color: $hollen9-primary-color;
+		}
+	}
+}

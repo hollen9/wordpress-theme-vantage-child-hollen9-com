@@ -1,0 +1,12 @@
+@import "variables";
+
+.wp-dark-mode-switcher.floating, .wp-dark-mode-side-toggle-wrap.floating {
+	//position: static !important;
+	position: absolute !important;
+	bottom: unset !important;
+	right: unset !important;
+	left: -99999px !important;
+	top: -99999px !important;
+	/*bottom: unset !important;*/
+	/*top: 5rem;*/
+}

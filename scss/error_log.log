@@ -1,0 +1,157 @@
+07/14/22 7:16:46: plugin-ecommerce-product-category.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:16:46: variables.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:16:46: main.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:16:53: plugin-ecommerce-product-category.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:16:53: variables.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:16:53: main.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:17:01: plugin-ecommerce-product-category.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:17:01: variables.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:17:01: main.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:17:47: plugin-ecommerce-product-category.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:17:47: variables.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:17:47: main.scss - parse error: failed at `mixin button-transition}` /var/www/html/wp-content/themes/vantage-child-1/scss/main.scss on line 106, at column 12
+07/14/22 7:17:48: plugin-ecommerce-product-category.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:17:48: variables.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:17:48: main.scss - parse error: failed at `mixin button-transition}` /var/www/html/wp-content/themes/vantage-child-1/scss/main.scss on line 106, at column 12
+07/14/22 7:17:50: plugin-ecommerce-product-category.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:17:50: variables.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:17:50: main.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:18:00: plugin-ecommerce-product-category.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:18:00: variables.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/14/22 7:18:00: main.scss - parse error: failed at `insert button-transition} {` /var/www/html/wp-content/themes/vantage-child-1/scss/variables.scss on line 7, at column 9
+07/15/22 6:51:48: main.scss - parse error: failed at `for plugin: metaslider that works with vantage` /var/www/html/wp-content/themes/vantage-child-1/scss/main.scss on line 11, at column 38
+07/15/22 6:52:00: main.scss - parse error: failed at `@import "plugin-metaslider-vantage" // for plugin: metaslider that works with vantage` /var/www/html/wp-content/themes/vantage-child-1/scss/main.scss on line 11, at column 1
+07/15/22 6:52:11: main.scss - parse error: failed at `@import "plugin-metaslider-vantage" // for plugin: metaslider that works with vantage` /var/www/html/wp-content/themes/vantage-child-1/scss/main.scss on line 11, at column 1
+07/15/22 6:52:16: main.scss - parse error: failed at `@import "plugin-metaslider-vantage" // for plugin: metaslider that works with vantage` /var/www/html/wp-content/themes/vantage-child-1/scss/main.scss on line 11, at column 1
+07/15/22 6:56:58: plugin-metaslider-vantage.scss - parse error: failed at `!important` /var/www/html/wp-content/themes/vantage-child-1/scss/plugin-metaslider-vantage.scss on line 40, at column 20
+07/15/22 6:56:58: main.scss - parse error: failed at `!important` /var/www/html/wp-content/themes/vantage-child-1/scss/plugin-metaslider-vantage.scss on line 40, at column 20
+07/15/22 6:57:11: plugin-metaslider-vantage.scss - parse error: failed at `!important;` /var/www/html/wp-content/themes/vantage-child-1/scss/plugin-metaslider-vantage.scss on line 40, at column 20
+07/15/22 6:57:11: main.scss - parse error: failed at `!important;` /var/www/html/wp-content/themes/vantage-child-1/scss/plugin-metaslider-vantage.scss on line 40, at column 20
+07/15/22 8:19:53: plugin-metaslider-vantage.scss - Undefined variable $geotech-primary-color: plugin-metaslider-vantage.scss on line 45, at column 5
+07/15/22 8:20:18: plugin-metaslider-vantage.scss - Undefined variable $geotech-primary-color: plugin-metaslider-vantage.scss on line 45, at column 5
+07/15/22 8:20:30: plugin-metaslider-vantage.scss - Undefined variable $geotech-primary-color: plugin-metaslider-vantage.scss on line 45, at column 5
+07/15/22 8:20:33: plugin-metaslider-vantage.scss - Undefined variable $geotech-primary-color: plugin-metaslider-vantage.scss on line 45, at column 5
+07/15/22 8:20:40: plugin-metaslider-vantage.scss - Undefined variable $geotech-primary-color: plugin-metaslider-vantage.scss on line 45, at column 5
+07/15/22 8:20:48: plugin-metaslider-vantage.scss - Undefined variable $geotech-primary-color: plugin-metaslider-vantage.scss on line 45, at column 5
+07/15/22 9:30:43: plugin-metaslider-vantage.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+07/15/22 9:30:43: main.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/15/22 9:30:56: plugin-metaslider-vantage.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+07/15/22 9:30:56: main.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/15/22 9:31:02: plugin-metaslider-vantage.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+07/15/22 9:31:02: main.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/15/22 9:32:41: plugin-metaslider-vantage.scss - Undefined variable $geotech-secondary-hover-color: plugin-metaslider-vantage.scss on line 145, at column 3
+07/15/22 9:32:41: main.scss - Undefined variable $geotech-secondary-hover-color: plugin-metaslider-vantage.scss on line 145, at column 3
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/15/22 9:32:57: plugin-metaslider-vantage.scss - Undefined variable $geotech-secondary-hover-color: plugin-metaslider-vantage.scss on line 145, at column 3
+07/15/22 9:32:57: main.scss - Undefined variable $geotech-secondary-hover-color: plugin-metaslider-vantage.scss on line 145, at column 3
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/18/22 9:00:42: plugin-ecommerce-product-category.scss - Undefined variable $geotech-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/18/22 9:00:42: main.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/18/22 9:00:42: plugin-metaslider-vantage.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/18/22 9:01:38: plugin-ecommerce-product-category.scss - Undefined variable $geotech-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/18/22 9:01:38: main.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/18/22 9:01:38: plugin-metaslider-vantage.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/18/22 9:01:41: plugin-ecommerce-product-category.scss - Undefined variable $geotech-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/18/22 9:01:41: main.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/18/22 9:01:41: plugin-metaslider-vantage.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/18/22 9:01:59: plugin-ecommerce-product-category.scss - Undefined variable $geotech-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/18/22 9:01:59: main.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/18/22 9:01:59: plugin-metaslider-vantage.scss - Undefined variable $geotech-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/18/22 9:02:02: plugin-ecommerce-product-category.scss - Undefined variable $geotech-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/18/22 9:02:08: plugin-ecommerce-product-category.scss - Undefined variable $geotech-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/18/22 9:02:26: plugin-ecommerce-product-category.scss - Undefined variable $geotech-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/18/22 9:38:07: main.scss - parse error: failed at `function kia_add_favicon(){ ?>` /home/xhvbgnar/public_html/wp-content/themes/vantage-child-hollen9/scss/main.scss on line 18, at column 1
+07/19/22 9:26:54: plugin-ecommerce-product-category.scss - Undefined variable $hollen9-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/19/22 9:26:54: main.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:26:54: plugin-metaslider-vantage.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:26:54: plugin-ecommerce-product-category.scss - Undefined variable $hollen9-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/19/22 9:26:54: main.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:26:54: plugin-metaslider-vantage.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:36:23: plugin-ecommerce-product-category.scss - Undefined variable $hollen9-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/19/22 9:36:23: main.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:36:23: plugin-metaslider-vantage.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:36:23: plugin-wp-github-md.scss - Undefined mixin font-awesome-common: plugin-wp-github-md.scss on line 4, at column 5
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:36:23: plugin-ecommerce-product-category.scss - Undefined variable $hollen9-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/19/22 9:36:23: main.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:36:23: plugin-metaslider-vantage.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:36:23: plugin-wp-github-md.scss - Undefined mixin font-awesome-common: plugin-wp-github-md.scss on line 4, at column 5
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:38:22: plugin-ecommerce-product-category.scss - Undefined variable $hollen9-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/19/22 9:38:22: main.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:38:22: plugin-metaslider-vantage.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:38:22: plugin-wp-github-md.scss - Undefined mixin font-awesome-common: plugin-wp-github-md.scss on line 4, at column 5
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:38:22: plugin-ecommerce-product-category.scss - Undefined variable $hollen9-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/19/22 9:38:22: main.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:38:22: plugin-metaslider-vantage.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:38:22: plugin-wp-github-md.scss - Undefined mixin font-awesome-common: plugin-wp-github-md.scss on line 4, at column 5
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/19/22 9:44:49: main.scss - parse error: failed at `font-size: 1.5rem'` /home/xhvbgnar/public_html/wp-content/themes/vantage-child-hollen9/scss/plugin-wp-github-md.scss on line 9, at column 9
+07/19/22 9:44:49: plugin-wp-github-md.scss - parse error: failed at `font-size: 1.5rem'` /home/xhvbgnar/public_html/wp-content/themes/vantage-child-hollen9/scss/plugin-wp-github-md.scss on line 9, at column 9
+07/19/22 9:44:49: main.scss - parse error: failed at `font-size: 1.5rem'` /home/xhvbgnar/public_html/wp-content/themes/vantage-child-hollen9/scss/plugin-wp-github-md.scss on line 9, at column 9
+07/19/22 9:44:49: plugin-wp-github-md.scss - parse error: failed at `font-size: 1.5rem'` /home/xhvbgnar/public_html/wp-content/themes/vantage-child-hollen9/scss/plugin-wp-github-md.scss on line 9, at column 9
+07/20/22 9:34:35: plugin-ecommerce-product-category.scss - Undefined variable $hollen9-secondary-color: plugin-ecommerce-product-category.scss on line 5, at column 5
+07/20/22 9:34:35: main.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/20/22 9:34:35: plugin-metaslider-vantage.scss - Undefined variable $hollen9-lightgrey: plugin-metaslider-vantage.scss on line 6, at column 2
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/20/22 9:34:35: plugin-wp-github-md.scss - Undefined mixin font-awesome-common: plugin-wp-github-md.scss on line 12, at column 9
+Call Stack:
+#0 import plugin-metaslider-vantage.scss main.scss on line 11
+07/20/22 7:49:19: plugin-disable-vantage-code-theme.scss - Undefined variable $hollen9-primary-color: plugin-disable-vantage-code-theme.scss on line 10, at column 5
+07/20/22 7:51:19: plugin-disable-vantage-code-theme.scss - Undefined variable $hollen9-primary-color: plugin-disable-vantage-code-theme.scss on line 10, at column 5
