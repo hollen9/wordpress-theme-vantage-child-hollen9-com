@@ -189,7 +189,7 @@ body.layout-full {
 }
 
 .mobile-nav-frame .title {
-	background: #063D61 !important;
+	background: $hollen9-primary-color !important;
 	border-bottom: 0 !important;
 }
 
@@ -311,7 +311,24 @@ article.post .entry-header, article.page .entry-header {
 }
 
 article.post, article.page {
-	border-bottom-color: $hollen9-lightgrey;
+	//border-bottom-color: $hollen9-lightgrey;
+	border: 0;
+}
+
+.post-block-link {
+	display: block;
+	padding: 2rem;
+	background-color: lighten($main-background, 3%);
+	border-radius: .5rem;
+	//border: .4rem solid transparent;
+	&:hover, &:focus {
+		background-color: lighten($main-background, 5%);
+		//border-color: $hollen9-primary-color;
+	}
+
+	&:active {
+		background-color: $hollen9-primary-color;
+	}
 }
 
 /* Pagination */
@@ -361,7 +378,6 @@ article.post, article.page {
 		color: $nav-link-color;
 	}
 }
-
 
 #scroll-to-top {
 	background: $hollen9-primary-color;

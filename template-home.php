@@ -50,23 +50,18 @@ while (have_posts()) {
             $loop->the_post();
 
             //$htmlMainBodyContent .= '<a href="' . get_the_permalink() . '" style="display: block;">';
-            $htmlMainBodyContent .= '<article class="post">';
-            $htmlMainBodyContent .= '<header class="entry-header">';
-            $title_link = '<h1 class="entry-title"><a class="d-block" href="' . get_the_permalink() . '" title="' . get_the_title() . '">' . get_the_title() . '</a></h1>';
-            $htmlMainBodyContent .= $title_link;
-            $htmlMainBodyContent .= '</header>';
+            $htmlMainBodyContent .= '<article class="post"><a class="d-block post-block-link" href="' . get_the_permalink() . '">';
+            
+            $htmlMainBodyContent .= '<header class="entry-header"><h1 class="entry-title">' . get_the_title() . '</h1></header>';
             // echo the_content(); 
-            //$moreLink = '... 。<div><a href="' . get_the_permalink() . '">閱讀內文</a></div>';
+            
             $moreLink = '...... 恕刪，點選繼續閱讀。';
-
 
             $my_content = apply_filters('the_content', get_the_content());
             $my_content = wp_strip_all_tags($my_content);
-            $htmlMainBodyContent .= '<a class="d-block" href="' . get_the_permalink() . '">' . wp_trim_words($my_content, $wordsToTrimmed, $moreLink) . "</a>";
+            $htmlMainBodyContent .= wp_trim_words($my_content, $wordsToTrimmed, $moreLink);
 
-            $htmlMainBodyContent .= '</article>';
-            //$htmlMainBodyContent .= '</a>';
-            //wp_trim_words( get_the_content(), 55, $moreLink);
+            $htmlMainBodyContent .= '</a></article>';
         }
 
         if ($loop->max_num_pages > 1) { // custom pagination    
