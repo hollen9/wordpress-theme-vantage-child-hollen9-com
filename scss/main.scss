@@ -109,10 +109,10 @@ article.post .entry-header h1.entry-title a, article.page .entry-header h1.entry
 }
 
 // Exlude MobileNav
-.site-navigation.main-navigation.use-sticky-menu > div > div[class^="menu-mainmenu"] ul li:first-of-type {
+.site-navigation.main-navigation.use-sticky-menu > div > div[class^="menu-mainmenu"] > ul > li:first-of-type {
 	display: none;
 }
-.site-navigation.main-navigation.use-sticky-menu.sticky > div > div[class^="menu-mainmenu"] ul li:first-of-type {
+.site-navigation.main-navigation.use-sticky-menu.sticky > div > div[class^="menu-mainmenu"] > ul > li:first-of-type {
 	display: inline-block;
 	background-image: url("https://hollen9.com/wp-content/uploads/2022/07/HollenXD2022_50x50-1.png");
 	background-repeat: no-repeat;
@@ -121,8 +121,8 @@ article.post .entry-header h1.entry-title a, article.page .entry-header h1.entry
     // padding-left: 3rem;
 }
 
-.site-navigation.main-navigation.use-sticky-menu ul li:first-of-type {
-	// display: none;
+.site-navigation.main-navigation.use-sticky-menu > div > div[class^="menu-mainmenu"] > ul > li:first-of-type {
+	
 x
 	a:not(.mobilenav-main-link) {
 		color: $hollen9-primary-color;
@@ -130,8 +130,8 @@ x
 	}
 }
 
-.site-navigation.main-navigation.use-sticky-menu.sticky ul li:first-of-type {
-	//display: inline-block;
+.site-navigation.main-navigation.use-sticky-menu.sticky > div > div[class^="menu-mainmenu"] > ul > li:first-of-type {
+	
 	a:not(.mobilenav-main-link) {
 		color: $hollen9-primary-color;
 		text-indent: 2rem;
@@ -140,10 +140,10 @@ x
 }
 
 ul.mobile {
-	li.menu-item-type-custom:first-of-type {
+	& > li.menu-item-type-custom:first-of-type {
 		display: none;
 	}
-	li.menu-item-home {
+	& > li.menu-item-home {
 		border-top: 0;
 	}
 }
