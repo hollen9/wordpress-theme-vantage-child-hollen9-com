@@ -9,6 +9,7 @@ add_action( 'wp_enqueue_scripts', 'vantage_child_enqueue_parent_style', 8 );
 
 function vantage_child_enqueue_child_sub_assets() {
 	wp_enqueue_style('hollen-scss-main', get_stylesheet_directory_uri() .'/css/main.css');
+    //wp_enqueue_style('md-keyboard-scss-main', get_stylesheet_directory_uri() .'/css/style-md-keyboard-main.css');
 	//wp_enqueue_script('js-darkmode', 'https://unpkg.com/dark-mode-toggle');
 	//wp_enqueue_script('js-darkmode', 'https://unpkg.com/darken');
 	wp_enqueue_script('hollen-js-main', get_stylesheet_directory_uri() .'/js/main.js');
@@ -71,6 +72,26 @@ function write_server_time(){
 }
 add_shortcode('hollen9_server_time', 'write_server_time');
 
+// function registering_custom_query_vars($query_vars)
+// {
+//     $query_vars[] = 'page_size'; //push
+//     //$query_vars[] = 'page_size'; //push
+//     return $query_vars;
+// }
+// add_filter('query_vars', 'registering_custom_query_vars');
+add_filter('query_vars', 'parameter_queryvars' ); // Let WP accept the query argument we will use
+function parameter_queryvars( $qvars )
+{
+    $qvars[] = 'posts_per_page';
+    return $qvars;
+}
+add_action( 'pre_get_posts', 'change_post_per_page' ); // Filter posts based on passed query variable if set
+function change_post_per_page( $query ) {
+    global $wp_query;
+    if ( !empty($wp_query->query['posts_per_page']) && is_numeric($wp_query->query['posts_per_page'])) {
+        $query->set( 'posts_per_page', $wp_query->query['posts_per_page'] );
+    }
+}
 
 add_action( 'init', 'exclude_sensitive_doc_from_stranger_search', 99 );
 function exclude_sensitive_doc_from_stranger_search() {
