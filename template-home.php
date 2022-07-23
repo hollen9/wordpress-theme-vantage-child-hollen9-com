@@ -33,17 +33,24 @@ while (have_posts()) {
         $paged = 1;
         //$htmlMainBodyContent .= 'page force=1'; //TEST
     }
+
     //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
     $loop = new WP_Query(
         array(
             'post_type' => 'post',
-            'posts_per_page' => get_option('posts_per_page'),
+            'posts_per_page' => $page_size,
             'paged' => $paged,
             'post_status' => 'publish',
             'orderby' => 'desc',
             'orderby' => 'date' // modified | title | name | ID | rand
         )
     );
+
+    $page_size = $loop->query_vars['posts_per_page'];
+    if ($page_size == false) {
+        $page_size = get_option('posts_per_page');
+    }
+    echo '<script>console.log("$page_size=' . $page_size . '")</script>';
 
     if ($loop->have_posts()) {
         while ($loop->have_posts()) {
