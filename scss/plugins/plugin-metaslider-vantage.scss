@@ -1,0 +1,151 @@
+// Home Slider
+@import "../variables";
+
+
+#main-slider {
+	background: $hollen9-lightgrey;
+}
+
+// Arrow Buttons
+
+.flexslider:hover .flex-direction-nav .flex-next {
+	/* DEFAULT VALUES
+     * opacity: .7;
+     * right: 10px;
+     */
+	right: 5px !important;
+}
+
+
+.metaslider .flexslider:focus-within .flex-next, .metaslider .flexslider:hover .flex-next {
+	/* DEFAULT VALUES
+	 * opacity: 0.8;
+	 * right: 5px; 
+	 */
+	
+}
+
+.metaslider .flexslider .flex-direction-nav li a {
+    /* DEFAULT VALUES
+     * width: 30px;
+     * height: 30px;
+     * border: 0;
+     * margin: -20px 0 0;
+     * box-shadow: none!important;
+     * display: block;
+     * background-color: transparent;
+     * background-image: url(../sliders/flexslider/bg_direction_nav.png);
+     * background-repeat: no-repeat;
+     * position: absolute;
+     * top: 50%;
+     * z-index: 10;
+     * cursor: pointer;
+     * text-indent: -9999px;
+     * opacity: 0;
+     * -webkit-transition: all .3s ease;
+     * -moz-transition: opacity .25s ease-in-out;
+     * transition: all .3s ease;
+     */
+	overflow: visible !important;
+	width: 5rem !important;
+	height: 5rem !important;
+    //background: none !important;
+    background-color: $hollen9-primary-color !important;
+    
+	background-position: center center !important;
+	background-size: 50%;
+	border-radius: .25rem;
+	
+	&.flex-prev {
+		background-image: url(../../../themes/vantage-child-1/img/arrow-left-steep.svg) !important;
+	}
+	&.flex-next {
+		background-image: url(../../../themes/vantage-child-1/img/arrow-right-steep.svg) !important;
+	}
+    /*&:after {
+		//position: absolute;
+        //font-family: "FontAwesome";
+        //content: "\f0a9";
+		font-size: 12pt !important;
+        content: "FUCK" !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		color: yellow !important;
+		display: block !important;
+		width: 5rem !important;
+		height: 5rem !important;
+		background-color: red;
+    }*/
+}
+.metaslider .flex-direction-nav .flex-next {
+    /* DEFAULT VALUES
+     * background-position: right 0;
+     * text-align: left;
+     * text-indent: 9999px;
+     */
+}
+.metaslider .flex-direction-nav .flex-next {
+    /* DEFAULT VALUES
+     * background-position: left 0;
+     */
+}
+.metaslider .flex-direction-nav a {
+	/* DEFAULT VALUES
+     *-moz-transition: all .3s ease;
+     *transition: all .3s ease;
+     */
+}
+.flex-direction-nav .flex-next {
+	/* DEFAULT VALUES
+     *right: -50px;
+     *text-align: right;
+     */
+}
+.metaslider a, .entry-content .metaslider a, .metaslider a:hover, .entry-content .metaslider a:hover, .metaslider ul a, .entry-content .metaslider ul a, .metaslider ul a:hover, .entry-content .metaslider ul a:hover {
+	/* DEFAULT VALUES
+     * border-bottom: none;
+     */
+}
+.metaslider a {
+	/* DEFAULT VALUES
+     * outline: none;
+     */
+}
+
+.flex-direction-nav a {
+	/* DEFAULT VALUES
+     * text-decoration: none;
+     * display: block;
+     * width: 40px;
+     * height: 40px;
+     * margin: -20px 0 0;
+     * position: absolute;
+     * top: 50%;
+     * z-index: 10;
+     * overflow: hidden;
+     * opacity: 0;
+     * cursor: pointer;
+     * color: rgba(0,0,0,.8);
+     * text-shadow: 1px 1px 0 rgb(255 255 255 / 30%);
+     * transition: all .3s ease-in-out;
+     */
+}
+
+.metaslider .flexslider:focus-within .flex-next:focus, .metaslider .flexslider:focus-within .flex-prev:focus, .metaslider .flexslider:hover .flex-next:hover, .metaslider .flexslider:hover .flex-prev:hover {
+	/* DEFAULT VALUES
+	 * opacity: 1;
+	 * */
+}
+
+
+// Dots
+.flex-control-paging li a {
+	background: $hollen9-secondary-color !important;
+	&:hover {
+		background: $hollen9-secondary-hover-color!important;
+	}
+}
+
+.flex-control-paging li a.flex-active {
+    background: $hollen9-primary-color !important;
+}

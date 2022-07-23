@@ -1,0 +1,20 @@
+@import "../variables";
+
+.entry-content code {
+    box-shadow: unset;
+    border-radius: .2rem;
+    background: $field-color;
+}
+
+.entry-content pre, .entry-content code[class^="language-"]{
+    background: unset;
+    font-family: unset;
+    border: unset;
+    box-shadow: unset;
+    overflow-x: unset;
+}
+
+.entry-content pre {
+    border: .2rem solid $hollen9-primary-color;
+    border-radius: .2rem;
+}

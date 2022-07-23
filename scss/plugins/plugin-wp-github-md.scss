@@ -1,0 +1,26 @@
+@import "../variables.scss";
+
+.copy-button {
+    opacity: 0;
+
+    padding: .7rem 2rem !important;
+    font-size: 1.5rem !important;
+    //position: absolute !important;
+    right: unset !important;
+    left: 5px;
+    &:before {
+        @include font-awesome-common;
+        background-image: none !important;
+        content: "\f0c5" !important;
+        top: unset !important;
+        left: unset !important;
+    }
+
+    &:hover, &:active, &:focus {
+        opacity: 1 !important;
+    }
+}
+
+pre:hover .copy-button, pre:focus .copy-button {
+    opacity: .5;
+}

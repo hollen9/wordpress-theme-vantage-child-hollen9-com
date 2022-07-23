@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import 'style-md-keyboard/abstracts/variables', 'style-md-keyboard/abstracts/functions', 'style-md-keyboard/abstracts/mixins';
+
+// 5. Components
+@import 'style-md-keyboard/components/button';
+
