@@ -3,6 +3,8 @@
 // -----------------------------------------------------------------------------
 
 .kbc-button, code.kb-btn {
+  overflow: hidden;
+
   @include kbd-size();
   @include kbd-color();
 

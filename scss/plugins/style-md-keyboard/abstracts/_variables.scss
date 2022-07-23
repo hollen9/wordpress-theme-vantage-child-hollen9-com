@@ -124,11 +124,13 @@ $kbc-border-radius-sm: 0.2rem !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$kbc-font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-  Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
-$kbc-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-  'Liberation Mono', 'Courier New', monospace !default;
+// $kbc-font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+//   Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+//   'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+// $kbc-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+//   'Liberation Mono', 'Courier New', monospace !default;
+$kbc-font-family-sans-serif: unset;
+$kbc-font-family-monospace: unset;
 
 $kbc-font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $kbc-font-size-lg: $kbc-font-size-base * 1.25 !default;
