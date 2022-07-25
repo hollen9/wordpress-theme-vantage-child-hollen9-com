@@ -1,0 +1,10 @@
+@import "../variables";
+.trp-language-switcher > div {
+    background-color: $field-color !important;
+
+    a {
+        &:hover {
+            background-color: $hollen9-tertiary-color !important;
+        }
+    }
+}
