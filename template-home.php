@@ -9,7 +9,7 @@
 // ===================== Script Parts ===============================
 
 // Configs
-$wordsToTrimmed = 25;
+$wordsToTrimmed = 100;
 
 
 
