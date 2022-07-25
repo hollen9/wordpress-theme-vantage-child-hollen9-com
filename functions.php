@@ -1,4 +1,7 @@
 <?php
+
+require_once('php/includes/basic-functions.php');
+
 /**
  * Enqueue the parent theme stylesheet.
  */
@@ -64,13 +67,11 @@ add_filter('script_loader_tag', 'add_type_attribute' , 10, 3);
 
 //Hollen Appened on 2022
 
-function write_server_time(){
-    date_default_timezone_set('Asia/Taipei'); // CDT
-    //Y-m-d H:i:s
-    $date = date('m-d H:i:s') . ' (GMT+8, Taiwan)';
-    return $date;
-}
-add_shortcode('hollen9_server_time', 'write_server_time');
+get_template_part('php/shortcodes');
+
+
+
+
 
 // function registering_custom_query_vars($query_vars)
 // {
