@@ -1,6 +1,13 @@
 <?php
 
+use function TranslatePress\file_get_html;
+
 require_once('php/includes/basic-functions.php');
+
+// function hollen9_child_theme_setup() {
+//     load_child_theme_textdomain('vantage', get_stylesheet_directory() . '/languages');
+// }
+// add_action('after_setup_theme', 'hollen9_child_theme_setup');
 
 /**
  * Enqueue the parent theme stylesheet.
@@ -50,6 +57,55 @@ function code_pre_theme(){
     }
 }
 add_action('wp_enqueue_scripts', 'code_pre_theme', 10);
+
+
+function get_text_from_dom($node) {
+    $text = '';
+    if (!is_null($node->childNodes)) {
+        foreach ($node->childNodes as $node) {
+        $text = get_text_from_dom($node, $text);
+        }
+    }
+    else {
+        return $text . $node->textContent . ' ';
+    }
+    return $text;
+}
+function strip_innertext_from_trp($text){
+    $doc = new DOMDocument();
+    $doc->loadHTML('<?xml encoding="utf-8" ?>' . trp_translate($text));
+    return $doc->documentElement->lastChild->firstChild->textContent;
+    $result = get_text_from_dom($doc->documentElement);
+    return $result;
+}
+
+function hollen9_locale_string($translated_text, $text, $domain) {
+    $locale = get_locale();
+    $locale_json_string = file_get_contents(get_stylesheet_directory() . '/hollen9-locale.json');
+    $locale_json_object = json_decode($locale_json_string, true);
+    $locale_json_objectProp_orderBindings = $locale_json_object['orderBindings'];
+    $locale_json_objectProp_strings = $locale_json_object['strings'];
+
+    $current_locale_idx = 0;
+    for($i = 0; $i < count($locale_json_objectProp_orderBindings); $i++) {
+        if ($locale_json_objectProp_orderBindings[$i] === $locale) {
+            $current_locale_idx = $i;
+            $i = count($locale_json_objectProp_orderBindings) + 1; //EXIT FOR LOOP
+        }
+    }
+
+    switch($domain) {
+        case 'hollen9-locale-string':
+            $innerKeyWithoutBracket = substr($translated_text, 1, strlen($translated_text)-2);
+            
+            if ($locale_json_objectProp_strings[$innerKeyWithoutBracket] != null) {
+                return $locale_json_objectProp_strings[$innerKeyWithoutBracket][$current_locale_idx];
+            }
+    }
+    return $translated_text;
+}
+add_filter('gettext', 'hollen9_locale_string', 11, 3);
+//I am Hollen9 aka 好冷酒/好冷九, running a Youtube channel named “好冷酒XD領域” that primary offer translated version of online videos or animations. I also build softwares like websites with tool like ASP.NET and/or react.js, cross platform mobile apps, chatbots, and Unity games.
 
 /*
 function add_type_attribute($tag, $handle, $src) {

@@ -1,0 +1,9 @@
+{
+    "orderBindings": ["en_US", "zh_TW"],
+    "strings": {
+        "meta_description": [
+            "I am Hollen9 aka 好冷酒/好冷九, running a Youtube channel named “好冷酒XD領域” that primary offer translated version of online videos or animations. I also build softwares like websites with tool like ASP.NET and/or react.js, cross platform mobile apps, chatbots, and Unity games.",
+            "我是 Hollen9，也叫作「好冷酒」或「好冷九」，經營「好冷酒XD領域」Youtube頻道，主要為網路影片、動畫的翻譯內容。此外我還會建置軟體，像是利用 ASP.NET 與 react.js 製作網站、跨平台的手機 APP、聊天APP群組機器人、Unity 遊戲。"
+        ]
+    }
+}
