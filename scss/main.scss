@@ -124,8 +124,7 @@ article.post .entry-header h1.entry-title a, article.page .entry-header h1.entry
 }
 
 .site-navigation.main-navigation.use-sticky-menu > div > div[class^="menu-mainmenu"] > ul > li:first-of-type {
-	
-x
+
 	a:not(.mobilenav-main-link) {
 		color: $hollen9-primary-color;
 		padding-left: 4rem;
@@ -207,11 +206,27 @@ body.layout-full {
 	border-bottom: 0 !important;
 }
 
+// 導覽列 標籤圖案
+nav.site-navigation, div.mobile-nav-frame {
+	a[href*="/topic/"] {
+		text-indent: 1.5rem;
+	}
+	a[href*="/topic/"]:before {
+		content: '\f02b';
+		font-family: 'FontAwesome';
+		position: absolute;
+		left: 1rem;
+	}
+	.mobile-nav-frame [class^="fa fa-"] {
+		text-align: center;
+	}
+}
 
 // /*登入按鈕highlight*/
 // .main-navigation ul li > a[href$="wp-login.php"], .main-navigation ul li.focus > a[href$="wp-login.php"] {
 // 	background: #BA551A;
 // }
+
 
 #search-icon #search-icon-icon {
 	background-color: darken($hollen9-secondary-color, 10%);
