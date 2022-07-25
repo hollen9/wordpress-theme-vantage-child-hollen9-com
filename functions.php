@@ -13,6 +13,10 @@ require_once('php/includes/basic-functions.php');
  * Enqueue the parent theme stylesheet.
  */
 function vantage_child_enqueue_parent_style() {
+
+    wp_dequeue_script('vantage-main');
+    wp_enqueue_script('vantage-main', get_stylesheet_directory_uri() . '/js/vantage-hollen-main.js', array( 'jquery' ) );
+
     wp_enqueue_style( 'vantage-parent-style', get_template_directory_uri() . '/style.css' );
 }
 add_action( 'wp_enqueue_scripts', 'vantage_child_enqueue_parent_style', 8 );
