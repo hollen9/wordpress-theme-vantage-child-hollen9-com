@@ -293,7 +293,7 @@ nav.site-navigation, div.mobile-nav-frame {
 @mixin normal-button-style {
 	background-color: $hollen9-secondary-color !important;
 	border:0 !important;
-	border-radius: .5rem;
+	border-radius: $field-border-radius;
 	color: #fff !important;
 	@include button-transition;
 	background-image: none;
@@ -341,7 +341,7 @@ article.post, article.page {
 	display: block;
 	padding: 2rem;
 	background-color: lighten($main-background, 3%);
-	border-radius: .5rem;
+	border-radius: $field-border-radius;
 	//border: .4rem solid transparent;
 	&:hover, &:focus {
 		background-color: lighten($main-background, 5%);
@@ -407,14 +407,16 @@ article.post, article.page {
 	right: 2rem;
 }
 
+/* Form Components */
+
 input, textarea {
 	background-color: $field-color;
-	border-radius: .5rem;
+	border-radius: $field-border-radius;
     border: .25rem solid $hollen9-tertiary-color;
 }
 
 select {
-	border-radius: .5rem;
+	border-radius: $field-border-radius;
     padding: .5rem .5rem;
     border: .25rem solid $hollen9-tertiary-color;
 	background-color: $field-color;
