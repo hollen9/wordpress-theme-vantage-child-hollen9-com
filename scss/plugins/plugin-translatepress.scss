@@ -1,10 +1,28 @@
 @import "../variables";
+
+$trp-language-switcher-width: 139px;
+$dropdown-arrow-icon-width: 20px;
+
 .trp-language-switcher > div {
     background-color: $field-color !important;
-
+    background-image: none !important;
+    // width: $trp-language-switcher-width !important;
     a {
+        color: $hollen9-secondary-color !important;
         &:hover {
             background-color: $hollen9-tertiary-color !important;
+        }
+
+
+        //display: inline-block;
+        // width: $trp-language-switcher-width - $dropdown-arrow-icon-width !important;
+
+        &:first-of-type::after {
+            content: '\f078';
+            @include font-awesome-common;
+            display: inline-block;
+            position: absolute;
+            right: 1rem;
         }
     }
 }
