@@ -1,12 +1,8 @@
 @import "../variables";
 
-.entry-content code {
-    box-shadow: unset;
-    border-radius: .2rem;
-    background: $field-color;
-}
+$code-background-color: #F5F2F0;
 
-.entry-content pre, .entry-content code[class^="language-"]{
+@mixin code-common-reset {
     background: unset;
     font-family: unset;
     border: unset;
@@ -15,6 +11,18 @@
 }
 
 .entry-content pre {
+    @include code-common-reset;
     border: .2rem solid $hollen9-primary-color;
-    border-radius: .2rem;
+    border-radius: $field-border-radius;
+    background: $field-color;
+}
+
+.entry-content code {
+    @include code-common-reset;
+    box-shadow: unset;
+    border-radius: $field-border-radius;
+}
+
+.entry-content code[class^="language-"] {
+    background: $code-background-color;
 }
