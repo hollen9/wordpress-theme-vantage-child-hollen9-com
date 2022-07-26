@@ -189,6 +189,11 @@ body.layout-full {
 	padding: 2rem 3.5rem 1.5rem 3.5rem;
 }
 
+// Sub Menu
+.main-navigation ul ul {
+	background-color: darken(mix($main-background, $hollen9-secondary-color, 75%), 45%);
+}
+
 .mobile-nav-frame .title {
 	background: $hollen9-primary-color !important;
 	border-bottom: 0 !important;
