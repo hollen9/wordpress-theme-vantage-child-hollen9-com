@@ -15,12 +15,20 @@ $code-background-color: #F5F2F0;
     border: .2rem solid $hollen9-primary-color;
     border-radius: $field-border-radius;
     background: $field-color;
+    //font-family: $font-family-mono !important;
+    code {
+        @include code-common-reset;
+    }
 }
 
 .entry-content code {
     @include code-common-reset;
     box-shadow: unset;
+    border: (.2rem/2) solid $hollen9-primary-color;
     border-radius: $field-border-radius;
+    background: $field-color;
+    padding: .2rem .4rem;
+    @include font-family-code-mono;
 }
 
 .entry-content code[class^="language-"] {

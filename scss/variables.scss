@@ -24,6 +24,10 @@ $field-color: #F5F2F0;
 
 $field-border-radius: .5rem;
 
+@mixin font-family-code-mono {
+     font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+}
+
 @mixin button-transition {
      transition: all 0.2s ease !important;
 }
