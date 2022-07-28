@@ -20,7 +20,8 @@ while (have_posts()) {
     if ( is_page() ) {
         the_post();
         // the_content();
-        $htmlMainBodyContent .= get_the_content();
+        $htmlMainBodyContent .=  apply_filters( 'the_content', get_the_content() );
+        //$htmlMainBodyContent .= get_the_content();
     }
     $htmlMainBodyContent .= '<div class="the_loop">';
     if (get_query_var('paged')) {

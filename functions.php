@@ -2,7 +2,7 @@
 
 use function TranslatePress\file_get_html;
 
-require_once('php/includes/basic-functions.php');
+require_once('php/includes/helpers/string-helper.php');
 
 // function hollen9_child_theme_setup() {
 //     load_child_theme_textdomain('vantage', get_stylesheet_directory() . '/languages');
